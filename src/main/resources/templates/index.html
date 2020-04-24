@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.springframework.org/schema/mvc">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script th:inline="javascript">
+    var data = [[${dhList}]];
+    var obj = eval(data);
+    console.log(obj[0].id);
+    console.log(obj[0].menu_name);
+    console.log(obj[0].menu_url);
+</script>
+<body>
+    <h1>[[${dhList}]]</h1>
+    <h1>[[${dhList1[0].menu_name}]]</h1>
+    <h1>[[${dhList1[0].menu_url}]]</h1>
+</body>
+<script>
+
+</script>
+</html>
